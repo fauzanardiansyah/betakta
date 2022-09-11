@@ -1,0 +1,151 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+.get-started{
+    background-image: -moz-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+    background-image: -webkit-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+    background-image: -ms-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+    // padding: 120px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    @include device(mobile){
+        padding: 4rem 0;
+    }
+    .shape{
+        opacity: 0.03;
+        &.one{
+            background: white;
+            top: -290px;
+            left: -50px;
+        }
+        &.two{
+            background: white;
+            top: -260px;
+            left: 100px;
+        }
+        &.three{
+            background: white;
+            top: auto;
+            left: 47%;
+            bottom: -300px;
+        }
+        &.four{
+            background: white;
+            top: auto;
+            left: 63%;
+            bottom: -280px;
+        }
+    }
+    .content{
+        color: #fff;
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+        }
+        h2{
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+            line-height: 50px;
+            font-size: 40px;
+        }
+        p{
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif;
+        }
+        .btn-group{
+            @include device(tablet){
+                flex-direction: column;
+                width: 100%;
+            }
+            @include device(mobile){
+                flex-direction: column;
+                width: 100%;
+            }
+            >.btn{
+                @include device(mobile){
+                    width: 100%;
+                }
+                +.btn{
+                    @include device(tablet){
+                        margin-left: 0;
+                        margin-top: 1rem;
+                        margin-bottom: 2.5rem;
+                    }
+                    @include device(mobile){
+                        margin-left: 0;
+                        margin-top: 1rem;
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+        }
+        .btn{
+            font: 500 16px "Poppins", sans-serif;
+            padding: 12px 34px;
+            border-color: #fff;
+            background: #fff;
+            line-height: 27px;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            min-width: 200px;
+            text-align: center;
+            -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+            box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+            background-color: #4069eb;
+            display: inline-block;
+            padding: 14px 40px;
+            color: #fff;
+            border-radius: 45px;
+            border: 1px solid #4069eb;
+            &.one{
+                background: #fff;
+                border: 1px solid #fff;
+                color: #4069eb;
+                vertical-align: middle;
+                img{
+                    padding-right: 12px;
+                }
+                &:hover{
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+            }
+            &.two{
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid #fff;
+                vertical-align: middle;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                margin-left: 20px;
+                i{
+                    font-size: 25px;
+                    padding-right: 10px;
+                    vertical-align: sub;
+                    font-style: unset;
+                    &.fab{
+                        font-family: "Font Awesome 5 Brands";
+                        &::before{
+                            content: "\f179";
+                        }
+                    }
+                }
+                &:hover{
+                    background: #fff;
+                    border: 1px solid #fff;
+                    color: #4069eb;
+                }
+            }
+        }
+    }
+}

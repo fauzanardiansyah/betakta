@@ -1,0 +1,53 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+#map-canvas { 
+    height: 565px;
+    width: 565px;
+    margin: 0; 
+    padding: 0; 
+    cursor: default !important;
+    @include device(tablet){
+        height: 565px;
+        width: 675px;
+    }
+    @include device(mobile){
+        height: 325px;
+        width: 325px;
+    }
+}
+
+@mixin clip-path($clip) {
+    -webkit-clip-path: url($clip);
+    -moz-clip-path: url($clip);
+    -ms-clip-path: url($clip);
+    clip-path: url($clip);
+}
+  
+#map-canvas{
+    @include clip-path(#chopChop);
+    .gm-style>div:nth-child(2) {
+        bottom: 30px !important;
+        left: 195px !important;
+        &:div div {
+            cursor: default;
+        }
+    }
+    @include device(tablet){
+        -webkit-clip-path: unset !important;
+        -moz-clip-path: unset !important;
+        -ms-clip-path: unset !important;
+        clip-path: unset !important;
+    }
+    @include device(mobile){
+        -webkit-clip-path: unset !important;
+        -moz-clip-path: unset !important;
+        -ms-clip-path: unset !important;
+        clip-path: unset !important;
+    }
+}

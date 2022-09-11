@@ -1,0 +1,72 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+.testimonials{
+    &-images{
+        position: relative;
+        width: 100%;
+        @include device(tablet){
+            margin-bottom: 2rem;
+        }
+        @include device(mobile){
+            margin-bottom: 2rem;
+        }
+        img{
+            width: 100%;
+            &:only-of-type{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 100%;
+                transform: translateX(-50%);
+                z-index: -1;
+            }
+            + img{
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 100%;
+                transform: translateX(-50%);
+                z-index: 99;
+            }
+        }
+    }
+    &-content{
+        width: 100%;
+        margin: 0 2rem;
+        @include device(tablet){
+            margin: 0;
+            text-align: center;
+        }
+        @include device(mobile){
+            margin: 0;
+            text-align: center;
+        }
+        h5{
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        h6{
+            font-weight: 600;
+            color: $gray;
+        }
+        h4{
+            font-weight: 800;
+        }
+        .btn{
+            font: 400 14px/60px "Open Sans",sans-serif;
+            border-radius: 2rem;
+            padding: 0px 25px;
+            border: 0px;
+            z-index: 2;
+            background: #072e5e !important;
+        }
+    }
+}

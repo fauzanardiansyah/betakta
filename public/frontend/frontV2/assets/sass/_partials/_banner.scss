@@ -1,0 +1,595 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+.banner-area{
+    position: relative;
+    z-index: 1;
+    .banner-6{
+        min-height: auto;
+        padding: 115px 0 50px;
+        // background-image: url(../../assets/img/banner-bg3.jpg);
+        background-image: -moz-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+        background-image: -webkit-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+        background-image: -ms-linear-gradient(-50deg, $primary 0%, lighten($primary, 5%) 46%, #55e5e0 100%);
+        background-size: cover;
+        background-position: center center;
+        @include device(mobile){
+            padding: 75px 0 20px;
+        }
+        .title{
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            margin: 20px 0 15px;
+        }
+        .subtitle{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #ffffff;
+            opacity: 0.8;
+        }
+    }
+    .banner-4{
+        background: url(../img/banner.png) no-repeat scroll center 100%;
+        height: 130vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background-size: cover;
+        @include device(tablet){
+            height: 100vh;
+        }
+        @include device(mobile-sm){
+            height: 150vh;
+        }
+        .content{
+            width: 100%;
+            margin-top: -10rem;
+            @include device(tablet){
+                margin-top: -30rem;
+                text-align: center;
+            }
+            @include device(mobile){
+                margin-top: -23rem;
+            }
+            @include device(mobile-sm){
+                margin-top: -10rem;
+            }
+            h2{
+                margin-bottom: 20px;
+                color: #fff;
+                font-weight: 700;
+                font-family: "Poppins",sans-serif;
+                font-size: 60px;
+                margin-bottom: .5rem;
+                @include device(tablet){
+                    font-size: 40px;
+                    margin-bottom: 1rem;
+                }
+                @include device(mobile){
+                    font-size: 40px;
+                    margin-bottom: 1rem;
+                }
+            }
+            p{
+                color: #fff;
+                font-weight: 300;
+                line-height: 40px;
+                font-size: 25px;
+                margin-bottom: 0rem;
+                span{
+                    font-weight: 700;
+                }
+                @include device(tablet){
+                    line-height: 25px;
+                    font-size: 15px;
+                }
+                @include device(mobile){
+                    line-height: 25px;
+                    font-size: 15px;
+                }
+            }
+            .button-area{
+                a{
+                    margin-right: 1rem;
+                }
+            }
+            .btn-group{
+                @include device(mobile){
+                    flex-direction: column;
+                    width: 100%;
+                }
+                >.btn{
+                    @include device(mobile){
+                        width: 100%;
+                    }
+                    +.btn{
+                        @include device(mobile){
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .btn{
+                overflow: hidden;
+                display: inline-block;
+                font-weight: 500;
+                font-size: 14px;
+                font-family: "Poppins",sans-serif;
+                z-index: 1;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                margin-top: 30px;
+                @include device(mobile){
+                    margin-top: 15px;
+                }
+                &.btn-primary{
+                    border: 0px;
+                    background: $primary;
+                    transition: all 0.2s linear;
+                    color: $white;
+                    padding: 14px 40px;
+                    box-shadow: 0px 20px 30px 0px rgba(12,0,46,0.1);
+                    display: inline-block;
+                    padding: 14px 40px;
+                    border-radius: 45px;
+                    border: 1px solid $primary;
+                    @include device(mobile){
+                        padding: 10px 30px;
+                    }
+                    &:hover{
+                        background-color: $primary;
+                        color: #fff;
+                        border: 1px solid $primary;
+                    }
+                }
+                &.btn-secondary{
+                    border: 0px;
+                    background: #fff;
+                    transition: all 0.2s linear;
+                    color: $primary;
+                    padding: 14px 40px;
+                    box-shadow: 0px 20px 30px 0px rgba(12,0,46,0.1);
+                    display: inline-block;
+                    padding: 14px 40px;
+                    border-radius: 45px;
+                    background-color: #fff;
+                    color: $primary;
+                    border: 1px solid #fff;
+                    @include device(mobile){
+                        padding: 10px 30px;
+                    }
+                    &:hover{
+                        background: #fff;
+                        color: $primary;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+        }
+        .img{
+            position: relative;
+            display: inline-block;
+            z-index: 0;
+            margin-top: -10rem;
+            @include device(tablet){
+                display: block;
+                margin-top: -3.5rem;
+            }
+            @include device(mobile){
+                display: block;
+                margin-top: -1.5rem;
+            }
+            .banner-img{
+                position: absolute;
+                // animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
+                // animation-name: animateUpDown;
+                // animation-iteration-count: infinite;
+                &.one{
+                    width: 550px;
+                    // top:-18remx;
+                    // left: 110px;
+                    top: -20rem;
+                    left: -5rem;
+                    -webkit-animation: mover 1s infinite alternate;
+                    animation: mover 1s infinite alternate;
+                    z-index: 7;
+                    @include device(tablet){
+                        left: 0rem;
+                        top: -4.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @include device(mobile){
+                        left: 0rem;
+                        top: 1.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                &.two{
+                    width: 550px;
+                    top: -20rem;
+                    left: -5rem;
+                    -webkit-animation: move 2s infinite alternate;
+                    animation: move 2s infinite alternate;
+                    transition-delay: 1s;
+                    z-index: 8;
+                    @include device(tablet){
+                        left: 0rem;
+                        top: -4.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @include device(mobile){
+                        left: 0rem;
+                        top: 1.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                &.three{
+                    width: 550px;
+                    top: -20rem;
+                    left: -5rem;
+                    -webkit-animation: moves 4s infinite alternate;
+                    animation: moves 4s infinite alternate;
+                    transition-delay: 2s;
+                    z-index: 9;
+                    transition-delay: 1s;
+                    @include device(tablet){
+                        left: 0rem;
+                        top: -4.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @include device(mobile){
+                        left: 0rem;
+                        top: 1.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                &.four{
+                    width: 550px;
+                    top: -20rem;
+                    left: -5rem;
+                    z-index: 10;
+                    @include device(tablet){
+                        left: 0rem;
+                        top: -4.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @include device(mobile){
+                        left: 0rem;
+                        top: 1.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                &.five{
+                    width: 550px;
+                    top: -20rem;
+                    left: -5rem;
+                    // -webkit-animation: moves 4s infinite alternate;
+                    // animation: moves 4s infinite alternate;
+                    // transition-delay: 2s;
+                    @include device(tablet){
+                        left: 0rem;
+                        top: -4.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                    @include device(mobile){
+                        left: 0rem;
+                        top: 1.5rem;
+                        width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+                &.six{
+                    top: -7rem;
+                    left: 0rem;
+                    -webkit-animation: moves 2s infinite alternate;
+                    animation: moves 2s infinite alternate;
+                    transition-delay: 2s;
+                    @include device(mobile){
+                        top: 1.5rem;
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                }
+                &.seven{
+                    top: -7rem;
+                    left: 0rem;
+                    -webkit-animation: move 2.5s infinite alternate;
+                    animation: move 2.5s infinite alternate;
+                    transition-delay: 3s;
+                    @include device(mobile){
+                        top: 1.5rem;
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                }
+                &.eight{
+                    top: -7rem;
+                    left: 0rem;
+                    z-index: 11;
+                    @include device(mobile){
+                        top: 1.5rem;
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .mobile{
+                margin-top: 140px;
+                max-width: 100%;
+                position: relative;
+                top: -110px;
+                z-index: -1;
+                margin-left: 0px;
+            }
+        }
+    }
+    .btn{
+        font: 500 16px "Poppins", sans-serif;
+        padding: 12px 34px;
+        border-color: #fff;
+        background: #fff;
+        line-height: 27px;
+        -webkit-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+        min-width: 200px;
+        text-align: center;
+        -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+        box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+        background-color: #4069eb;
+        display: inline-block;
+        padding: 14px 40px;
+        color: #fff;
+        border-radius: 45px;
+        border: 1px solid #4069eb;
+        &.one{
+            background: #fff;
+            border: 1px solid #fff;
+            color: #4069eb;
+            vertical-align: middle;
+            img{
+                padding-right: 12px;
+            }
+            &:hover{
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid #fff;
+                color: #fff;
+            }
+        }
+        &.two{
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #fff;
+            vertical-align: middle;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-left: 20px;
+            i{
+                font-size: 25px;
+                padding-right: 10px;
+                vertical-align: sub;
+                font-style: unset;
+                &.fab{
+                    font-family: "Font Awesome 5 Brands";
+                    &::before{
+                        content: "\f179";
+                    }
+                }
+            }
+            &:hover{
+                background: #fff;
+                border: 1px solid #fff;
+                color: #4069eb;
+            }
+        }
+    }
+}
+
+.card-banner{
+    min-height: 365px;
+    position: relative;
+    overflow: hidden;
+    padding: 45px 45px;
+    border-radius: 2.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.08);
+    @include device(mobile){
+        margin-bottom: 1.25rem;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 50%;
+        opacity: 0;
+        background-color: $brand-secondary;
+        -webkit-transition: all 600ms ease;
+        -ms-transition: all 600ms ease;
+        -o-transition: all 600ms ease;
+        -moz-transition: all 600ms ease;
+        transition: all 600ms ease;
+    }
+    .shape{
+        &.one{
+            content: '';
+            width: 250px;
+            height: 250px;
+            background: lighten($brand-secondary, 10);
+            border-radius: 50%;
+            position: absolute;
+            bottom: -120px;
+            right: -120px;
+            transform: scale(0);
+            -webkit-transition: all 600ms ease;
+            -moz-transition: all 600ms ease;
+            -ms-transition: all 600ms ease;
+            -o-transition: all 600ms ease;
+            transition: all 600ms ease;
+        }
+        &.two{
+            content: '';
+            width: 373px;
+            height: 373px;
+            background: lighten($brand-secondary, 10);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: all 600ms ease;
+            -moz-transition: all 600ms ease;
+            -ms-transition: all 600ms ease;
+            -o-transition: all 600ms ease;
+            transition: all 600ms ease;
+            transform: translate(100% ,100%);
+        }
+        &.three{
+            content: '';
+            width: 550px;
+            height: 500px;
+            background: lighten($brand-secondary, 10);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: all 600ms ease;
+            -moz-transition: all 600ms ease;
+            -ms-transition: all 600ms ease;
+            -o-transition: all 600ms ease;
+            transition: all 600ms ease;
+            transform: translate(100% ,100%);
+        }
+    }
+    .icon-box{
+        position: relative;
+        z-index: 2;
+        font-size: 60px;
+        line-height: 1em;
+        color: $brand-secondary;
+        -webkit-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        transition: all 300ms ease;
+        i{
+            position: relative;
+        }
+    }
+    h3{
+        position: relative;
+        font-size: 24px;
+        z-index: 2;
+        color: #222222;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin: 35px 0px 28px;
+        a{
+            position: relative;
+            color: #222222;
+            transition: all 300ms ease;
+            -webkit-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+        }
+    }
+    .text{
+        position: relative;
+        color: #222222;
+        z-index: 2;
+        font-size: 16px;
+        line-height: 1.8em;
+        -webkit-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+    &:hover{
+        .shape{
+            &.one{
+                transform: scale(1);
+                -webkit-transition-delay: 300ms;
+                -ms-transition-delay: 300ms;
+                transition-delay: 300ms;
+            }
+            &.two{
+                opacity: 0.6;
+                transform: translate(50% ,50%);
+                -webkit-transition-delay: 600ms;
+                -ms-transition-delay: 600ms;
+                transition-delay: 600ms;
+            }
+            &.three{
+                opacity: 0.4;
+                -webkit-transition-delay: 900ms;
+                -ms-transition-delay: 900ms;
+                transition-delay: 900ms;
+                transform: translate(50% ,50%);
+            }
+        }
+        .icon-box{
+            color: #fff;
+        }
+        h3{
+            a{
+                color: #fff;
+            }
+        }
+        .text{
+            color: #fff;
+        }
+        &::before{
+            height: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+@-webkit-keyframes moves {
+    0% { transform: translateY(5px); }
+    100% { transform: translateY(0px); }
+}
+@keyframes moves {
+    0% { transform: translateY(5px); }
+    100% { transform: translateY(0px); }
+}

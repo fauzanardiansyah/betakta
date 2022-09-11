@@ -1,0 +1,106 @@
+.required {
+color: red
+}
+
+
+.wizard_horizontal ul.wizard_steps {
+    display: table;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin: 0 0 20px -14px !important;
+    padding-left: 0 !important;
+}
+
+.reject-document .step_no {
+    background: crimson;
+}
+.reject-document .step_descr 
+{
+    color: crimson;
+}
+
+
+.x_content {
+    padding: 0 5px 6px;
+    float:none !important;
+    clear: both;
+    margin-top: 5px;
+}
+
+.pdfobject-container { 
+    height: 50rem;
+    border: 1rem solid rgba(0,0,0,.1); 
+}
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+.file-upload {
+    display: none !important;
+}
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: 8px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: -10px;
+}
+
+.p-image {
+  position: absolute;
+  top: 80px;
+  right:-19px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
+
+#upload-profile-submit {
+  position: relative;
+  top: 28px;
+  left: -35px;
+  background: none;
+  border: none;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+table tbody tr:hover{
+  background-color:#f1f2f6;
+  }
+  
+  table tbody tr td{
+      font-weight: bold;
+      }
+  tr, th, td {
+      border: none;
+    }
+    
+    th {
+      background-color: #2a3f54;
+      color: #fff;
+    }
+    #main-logo {
+      width: 36px !important;
+      margin-bottom: 9px !important;
+    }
+    .nav_title .site_title span {
+      font-size: 16px !important;
+      margin-left: 3px !important;
+    }
+  

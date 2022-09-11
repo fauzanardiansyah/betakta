@@ -1,0 +1,174 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+@page {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 14px;
+
+}
+span {
+    font-size: 14px;
+}
+
+small {
+    font-size: 12px;
+}
+
+.container {
+    padding: 2em;
+    margin: auto;
+    background: #ffff;
+    
+   
+}
+
+.inner-bg {
+    z-index: 999;
+    padding: 15px;
+    background-image: url(https://img3.pngdownload.id/dy/cbe74266b09ef143397f24455befdd00/L0KzQYm3VcA0N5dpj5H0aYP2gLBuTflvbJDzfeVyYT3wccG0kv96aZ15kZ9vcnXoPYbohfI2apI8etdtYUa3PoW6UsA2OWE4Sac7NUO6Q4m9U8c5OWgziNDw/kisspng-indonesia-map-royalty-free-5aeb5ba7beda64.4320510315253738637817.png);
+    background: #ecf0f1;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.content-1 {
+    margin-bottom: 10px;
+}
+
+.content-1 .left {
+   
+    float: left;
+}
+
+
+.content-1 .center {
+   
+    float: left;
+    margin-right: 200px;
+}
+
+
+.content-1 .right {
+   
+    float: right;
+}
+
+.content-1 .center-top img {
+    width: 70px;
+}
+
+.content-1 .right img {
+    right: 20px;
+    width: 160px;
+    margin-right: 10px;
+    position: relative;
+}
+.content-1 .center-bottom h4 {
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;;
+}
+
+.content-1 .left img{
+    margin-top: -53px;
+}
+
+
+
+
+.content-2 {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.content-2 p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+
+
+
+
+.content-3 {
+    margin-bottom: 5px;
+}
+
+
+
+.content-4 {
+    margin-bottom: 5px;
+}
+.content-4 .content-4-bottom {
+    margin-top: 5px;
+}
+.content-4 .content-4-bottom a {
+    background-color: #00a8ff;
+    color: #fff;
+    padding: 3px 15px;
+}
+
+
+
+#image-footer {
+  
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    z-index: 0;
+    
+}
+
+
+
+
+/* Style for back certificate */
+
+.container-2 {
+    padding: 2em;
+    margin: auto;
+    background: #ecf0f1;
+    height: 100%;
+ 
+   
+}
+
+#logo-back {
+    width: 70px;
+}
+
+#kode-etik {
+    font-size: 25px;
+    color: #00a8ff;
+}
+
+.bg-inner-2 {
+    padding: 15px;
+    background-image: url(https://img3.pngdownload.id/dy/cbe74266b09ef143397f24455befdd00/L0KzQYm3VcA0N5dpj5H0aYP2gLBuTflvbJDzfeVyYT3wccG0kv96aZ15kZ9vcnXoPYbohfI2apI8etdtYUa3PoW6UsA2OWE4Sac7NUO6Q4m9U8c5OWgziNDw/kisspng-indonesia-map-royalty-free-5aeb5ba7beda64.4320510315253738637817.png);
+    background: #ecf0f1;
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+}
+
+ul {
+    margin-top: 5px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+

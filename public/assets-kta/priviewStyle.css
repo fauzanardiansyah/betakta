@@ -1,0 +1,77 @@
+@media screen /*--This is for Print Preview Screen--*/
+
+{
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: cyan;
+    }
+    
+    .container {
+        width: 842px;
+        height: 595px;
+        padding: 2em;
+        margin: auto;
+        background: #ffff;
+    }
+    
+    .inner-bg {
+        padding: 20px;
+        background: url("images/peta-indonesia.svg");
+        background-color: #dcdde1;
+    }
+    
+    .content-1 {
+        width: 842px;
+        display: flex;
+        margin-bottom: 20px;;
+    }
+    
+    .content-1 .left {
+        width: 100px;
+    }
+    
+    
+    .content-1 .center {
+        width: 560px;
+    }
+    
+    
+    .content-1 .right {
+        width: 180px;
+    }
+    
+    .content-1 .center-top img {
+        width: 60px;
+    }
+    
+    .content-1 .right img {
+        right: 20px;
+        width: 160px;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .content-1 .center-bottom h3 {
+        text-align: center;
+        line-height: 20px;
+        margin-top: 10px;;
+    }
+    
+    .content-1 .left img{
+        margin-top: -53px;
+    }
+    
+    
+    
+    
+    
+    
+    .content-2 p {
+        text-align: justify;
+    }
+}

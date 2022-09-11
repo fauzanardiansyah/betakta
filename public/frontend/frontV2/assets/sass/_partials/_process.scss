@@ -1,0 +1,469 @@
+/**
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * @author         Alfian Imanuddin
+ * @copyright      Copyright (c) http://alfianimanuddin.com 
+*/
+
+.process{
+    // padding-bottom: 150px;
+    // padding-top: 160px;
+    // background: #fbfbfd;
+    .process-list{
+        position: relative;
+        padding-bottom: 70px;
+        .dot-img{
+            position: absolute;
+            left: 0;
+            top: 28px;
+            // top: 0;
+            width: 55%;
+        }
+        .item{
+            margin-top: 140px;
+            .image{
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    @include device(mobile){
+                        width: 100%;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .content{
+                position: relative;
+                padding-right: 70px;
+                padding-left: 70px;
+                @include device(mobile){
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                >.number{
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+                >.dot{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: rgba(161, 191, 228, 0.8);
+                    display: block;
+                    position: absolute;
+                    left: -9px;
+                    top: 15px;
+                    @include device(mobile){
+                        display: none;
+                    }
+                    .dot1{
+                        position: absolute;
+                        left: 50%;
+                        margin-top: -4px;
+                        margin-left: -4px;
+                        top: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: $primary;
+                        @include device(mobile){
+                            display: none;
+                        }
+                    }
+                    .dot2{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: rgba(#0A458E, .8);
+                        -webkit-animation: pulsate 3s infinite;
+                        animation: pulsate 3s infinite;
+                        -webkit-animation-delay: 1.5s;
+                        animation-delay: 1.5s;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        will-change: transform;
+                        @include device(mobile){
+                            display: none;
+                        }
+                    }
+                }
+                h3{
+                    font: 500 24px/35px "Poppins", sans-serif;
+                    color: #222d39;
+                    margin: 32px 0px 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .icon{
+                    width: 46px;
+                    height: 46px;
+                    line-height: 46px;
+                    border-radius: 50%;
+                    background-image: -moz-linear-gradient(40deg, $primary 0%, $primary 100%);
+                    background-image: -webkit-linear-gradient(40deg, $primary 0%, $primary 100%);
+                    background-image: -ms-linear-gradient(40deg, $primary 0%, $primary 100%);
+                    -webkit-box-shadow: 0px 10px 20px 0px rgba(94, 44, 237, 0.2);
+                    box-shadow: 0px 10px 20px 0px rgba(94, 44, 237, 0.2);
+                    font-size: 20px;
+                    color: #fff;
+                    text-align: center;
+                    margin-top: 30px;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &.one{
+                margin-top: 0px;
+            }
+            &.two{
+                margin-top: 100px;
+                .image{
+                    img{
+                        max-width: 100%;
+                        width: 80%;
+                        @include device(mobile){
+                            width: 100%;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                .content{
+                    position: relative;
+                    padding-left: 100px;
+                    @include device(mobile){
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                    >.dot{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(161, 191, 228, 0.8);
+                        display: block;
+                        position: absolute;
+                        left: 30px;
+                        top: 15px;
+                        @include device(mobile){
+                            display: none;
+                        }
+                        .dot1{
+                            position: absolute;
+                            left: 50%;
+                            margin-top: -4px;
+                            margin-left: -4px;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: $primary;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                        .dot2{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(#0A458E, .8);
+                            -webkit-animation: pulsate 3s infinite;
+                            animation: pulsate 3s infinite;
+                            -webkit-animation-delay: 1.5s;
+                            animation-delay: 1.5s;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            will-change: transform;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &.three{
+                margin-top: 80px;
+                .image{
+                    text-align: left !important;
+                    img{
+                        max-width: 100%;
+                        width: 80%;
+                        @include device(mobile){
+                            width: 100%;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                .content{
+                    position: relative;
+                    padding-left: 100px;
+                    @include device(mobile){
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                    >.dot{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(161, 191, 228, 0.8);
+                        display: block;
+                        position: absolute;
+                        left: -9px;
+                        top: 15px;
+                        @include device(mobile){
+                            display: none;
+                        }
+                        .dot1{
+                            position: absolute;
+                            left: 50%;
+                            margin-top: -4px;
+                            margin-left: -4px;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: $primary;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                        .dot2{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(#0A458E, .8);
+                            -webkit-animation: pulsate 3s infinite;
+                            animation: pulsate 3s infinite;
+                            -webkit-animation-delay: 1.5s;
+                            animation-delay: 1.5s;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            will-change: transform;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &.four{
+                margin-top: 90px;
+                .image{
+                    img{
+                        max-width: 100%;
+                        width: 80%;
+                        @include device(mobile){
+                            width: 100%;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                .content{
+                    position: relative;
+                    padding-left: 100px;
+                    @include device(mobile){
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                    >.dot{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(161, 191, 228, 0.8);
+                        display: block;
+                        position: absolute;
+                        left: 30px;
+                        top: 15px;
+                        @include device(mobile){
+                            display: none;
+                        }
+                        .dot1{
+                            position: absolute;
+                            left: 50%;
+                            margin-top: -4px;
+                            margin-left: -4px;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: $primary;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                        .dot2{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(#0A458E, .8);
+                            -webkit-animation: pulsate 3s infinite;
+                            animation: pulsate 3s infinite;
+                            -webkit-animation-delay: 1.5s;
+                            animation-delay: 1.5s;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            will-change: transform;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &.five{
+                margin-top: 90px;
+                .image{
+                    text-align: left !important;
+                    img{
+                        max-width: 100%;
+                        width: 80%;
+                        @include device(mobile){
+                            width: 100%;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+                .content{
+                    position: relative;
+                    padding-left: 100px;
+                    @include device(mobile){
+                        padding-right: 15px;
+                        padding-left: 15px;
+                    }
+                    >.dot{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: rgba(161, 191, 228, 0.8);
+                        display: block;
+                        position: absolute;
+                        left: -9px;
+                        top: 15px;
+                        @include device(mobile){
+                            display: none;
+                        }
+                        .dot1{
+                            position: absolute;
+                            left: 50%;
+                            margin-top: -4px;
+                            margin-left: -4px;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: $primary;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                        .dot2{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: rgba(#0A458E, .8);
+                            -webkit-animation: pulsate 3s infinite;
+                            animation: pulsate 3s infinite;
+                            -webkit-animation-delay: 1.5s;
+                            animation-delay: 1.5s;
+                            -webkit-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            will-change: transform;
+                            @include device(mobile){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dot{
+            &.middle{
+                left: 54.8%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+                bottom: 1.75rem;
+                top: auto;
+            }
+        }
+    }
+}
+
+.card-video{
+    position: relative;
+    padding: 51px 66px 58px;
+    background-size: cover !important;
+    background-position: right center !important;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 350px;
+    @include device(mobile){
+        padding: 20px;
+    }
+    .play-btn{
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        @include device(mobile){
+            width: 70px;
+            height: 70px;
+            padding: 0;
+            position: absolute;
+            z-index: 5;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+        }
+        a{
+            color: rgba(#fff, .4);
+            -moz-transition: all .5s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            &:hover{
+                color: #fff;
+                -moz-transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+            }
+            i{
+                font-size: 80px;
+                @include device(mobile){
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}

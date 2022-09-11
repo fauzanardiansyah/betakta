@@ -1,0 +1,230 @@
+body {
+	margin: auto;
+	padding: 0;
+}
+@page {
+	width: 21cm;
+  	height: 29.7cm; 
+}
+@media screen, print {
+	#ikindo {
+	  font-family: 'Rubik', sans-serif;
+	  color: #000;
+	  position: relative;
+	}
+	#ikindo .company-logo {
+		width: 70px;
+		height: auto;
+	}
+	#ikindo .small-company-logo {
+		width: 50px;
+		height: auto;
+	}
+	#ikindo .barcode-header {
+		width: 120px;
+		height: auto;
+	}
+	#ikindo .signature {
+		width: 120px;
+		height: auto;
+	}
+	#ikindo .qrcode-cert {
+		width: 80px;
+		height: auto;
+	}
+	#ikindo .qrcode-small {
+		width: 40px;
+		height: auto;
+	}
+	#ikindo .barcode-small {
+		height: 40px;
+		width: auto;
+	}
+	#ikindo p, #ikindo li {
+	  font-size: 14px;
+	  margin: 0;
+	  line-height: normal;
+	}
+	#ikindo ol {
+		padding-left: 16px;
+		margin: 8px 0;
+	}
+	#ikindo.small-container {
+	  width: 400px;
+	  height: 266px;
+	  padding: 20px;
+	  margin: auto;
+	  border: 1px dashed #999999;
+	  margin-bottom: 16px;
+	}
+	#ikindo.small-container p, #ikindo.small-container li {
+		font-size: 9px;
+		line-height: 12px;
+	}
+	#ikindo.small-container .table-identity td {
+		font-size: 9px;
+		line-height: 12px !important;
+		padding: 0;
+	}
+	#ikindo.big-container {
+	  padding: 50px;
+	}
+	#ikindo .bg-rectagle-top {
+	  position: absolute;
+	}
+	#ikindo .rectagle-small-top {
+	  top: 10px;
+	  left: 10px;
+	}
+	#ikindo .rectagle-big-top {
+	  top: 25px;
+	  left: 25px;
+	}
+	#ikindo .rectagle-small-bottom {
+	  bottom: 10px;
+	  right: 10px;
+	}
+	#ikindo .rectagle-big-bottom {
+	  bottom: 25px;
+	  right: 25px;
+	}
+	#ikindo .bg-rectagle-bottom {
+	  position: absolute;
+	  transform: rotate(180deg);
+	}
+	#ikindo .block-header {
+	  border-bottom: 2px solid #bebcbc;
+	  margin-bottom: 16px;
+	}
+	#ikindo .block-header-small {
+	  border-bottom: 2px solid #bebcbc;
+	  margin-bottom: 8px;
+	}
+	#ikindo .content-wrapper {
+	  background-color: #ecf0f1;
+	  padding: 8px 16px 8px;
+	  position: relative;
+	  overflow: hidden;
+	  z-index: 1;
+	  height: 675px;
+	}
+	#ikindo .content-wrapper.small-wrapper {
+	    height: 250px;
+	}
+	#ikindo .content-wrapper::after {
+	  content: ' ';
+	  display: block;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -1;
+	  opacity: 0.1;
+	  background-image: url('assets/bg.png');
+	  background-repeat: repeat;
+	}
+	#ikindo .star-wrapper {
+	  position: absolute;
+	  bottom: 28px;
+	  right: 28px;
+	  z-index: 9;
+	}
+	#ikindo .star-wrapper .star {
+	  position: absolute;
+	  left: 30%;
+	  top: 30%;
+	  width: 30px;
+	  height: 30px;
+	  left: 36%;
+	  top: 27%;
+	}
+	#ikindo .block-identity {
+	  padding: 0 30px;
+	}
+	#ikindo .bloc-kta {
+	  padding: 0 5%;
+	}
+	#ikindo .table-identity td {
+	  padding-bottom: 9px;
+	  font-size: 14px;
+	}
+	#ikindo .signature-small {
+	  width: 65px;
+	  height: auto;
+	}
+	#ikindo .img-responsive {
+	  display: block;
+	  max-width: 100%;
+	  height: auto;
+	}
+	#ikindo .img-fullwidth {
+	  width: 100%;
+	  height: auto;
+	}
+	#ikindo .text-center {
+	  text-align: center;
+	}
+	#ikindo .text-right {
+	  text-align: right;
+	  text-align: -webkit-right;
+	}
+	#ikindo .text-left {
+	  text-align: left;
+	  text-align: -webkit-left;
+	}
+	#ikindo .text-blue {
+	  color: #006fb9;
+	}
+	#ikindo .text-bold {
+	  font-weight: bold;
+	}
+	#ikindo .text-semi-bold {
+	  font-weight: 500;
+	}
+	#ikindo .margin-less {
+	  margin: 0 !important;
+	}
+	#ikindo .padding-less {
+	  padding: 0 !important;
+	}
+	#ikindo .margin-auto {
+	  display: block;
+	  margin: auto;
+	}
+	#ikindo .font-8 {
+	  font-size: 8px;
+	}
+	#ikindo .align-top {
+	  vertical-align: top !important;
+	}
+	#ikindo .line-height-normal {
+	  line-height: 26px;
+	}
+	#ikindo .label-blue {
+	  /*background-color: #00b9f5;*/
+	  color: #fff;
+	  padding: 4px;
+	  width: fit-content;
+	  display: table;
+	  text-align: center;
+	}
+	#ikindo .space-60-bottom {
+	  margin-bottom: 36px;
+	}
+	#ikindo .space-16-bottom {
+	  margin-bottom: 16px;
+	}
+	#ikindo .space-20-bottom {
+	  margin-bottom: 20px;
+	}
+	#ikindo .space-8-bottom {
+	  margin-bottom: 2px;
+	}
+	#ikindo .space-32-minus-bottom {
+	  margin-bottom: -32px;
+	}
+	#ikindo .space-16-minus-bottom {
+	  margin-bottom: -16px;
+	}
+}
