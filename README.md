@@ -1,2 +1,3 @@
 # betakta
 
+DB using PostgreSQL
